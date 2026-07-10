@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
-// O proxy encaminha tudo que comeca com /api para o backend Node na porta 3000.
-// Assim o front chama "/api/status" e nao precisa se preocupar com CORS nem porta.
+// The proxy forwards everything starting with /api to the Node backend on port 3000.
+// So the frontend calls "/api/status" and doesn't have to worry about CORS or ports.
 export default defineConfig({
   server: {
     port: 5173,

@@ -43,8 +43,8 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.status.ok { background: #064e3b; color: #6ee7b7; }
-.status.down { background: #7f1d1d; color: #fca5a5; }
+.status.ok { background: #064e3b; color: #6ee7b7; } /* backend online */
+.status.down { background: #7f1d1d; color: #fca5a5; } /* backend offline */
 
 .dot {
   width: 8px;

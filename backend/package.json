@@ -1,7 +1,7 @@
 {
   "name": "tmux-poc-backend",
   "version": "1.0.0",
-  "description": "Backend Node nativo (sem dependencias) para a POC de tmux",
+  "description": "Native Node backend (no dependencies) for the tmux POC",
   "type": "module",
   "scripts": {
     "dev": "node --watch server.js",

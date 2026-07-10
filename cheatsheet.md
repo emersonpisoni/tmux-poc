@@ -1,44 +1,45 @@
-# tmux — cola de atalhos para a apresentação
+# tmux — shortcut cheat sheet for the presentation
 
-> **Prefix** = a tecla que "acorda" o tmux antes de qualquer comando.
-> Padrão: **`Ctrl + b`** (aperta e solta, depois a próxima tecla).
+> **Prefix** = the key that "wakes up" tmux before any of its commands.
+> Default: **`Ctrl + b`** (press and release, then the next key).
 
-## O essencial (o que você vai usar ao vivo)
+## The essentials (what you'll use live)
 
-| Ação | Teclas |
-|------|--------|
-| **Detach** (sai, mas deixa tudo rodando) | `prefix` + `d` |
-| Reanexar depois | `tmux attach -t poc` |
-| Navegar entre painéis | `prefix` + `←↑↓→` |
-| Alternar para o último painel | `prefix` + `o` |
-| **Zoom** num painel (tela cheia / volta) | `prefix` + `z` |
-| Fechar o painel atual | `prefix` + `x` (confirma) ou `exit` |
+| Action | Keys |
+|--------|------|
+| **Detach** (leave, but keep everything running) | `prefix` + `d` |
+| Reattach later | `tmux attach -t poc` |
+| Move between panes | `prefix` + `←↑↓→` |
+| Switch to the last pane | `prefix` + `o` |
+| **Zoom** a pane (fullscreen / back) | `prefix` + `z` |
+| Close the current pane | `prefix` + `x` (confirm) or `exit` |
 
-## Painéis (o "vários terminais juntos")
+## Panes (the "many terminals together")
 
-| Ação | Teclas |
-|------|--------|
-| Dividir na vertical (lado a lado) | `prefix` + `%` |
-| Dividir na horizontal (um sobre o outro) | `prefix` + `"` |
-| Mostrar números dos painéis | `prefix` + `q` |
+| Action | Keys |
+|--------|------|
+| Split vertically (side by side) | `prefix` + `%` |
+| Split horizontally (one above the other) | `prefix` + `"` |
+| Rearrange into an even grid (square) | `prefix` + `Space` (cycles layouts, stop on `tiled`) |
+| Show pane numbers | `prefix` + `q` |
 
-## Janelas (as "abas")
+## Windows (the "tabs")
 
-| Ação | Teclas |
-|------|--------|
-| Nova janela | `prefix` + `c` |
-| Próxima / anterior | `prefix` + `n` / `p` |
-| Ir para a janela N | `prefix` + `0..9` |
-| Renomear janela | `prefix` + `,` |
+| Action | Keys |
+|--------|------|
+| New window | `prefix` + `c` |
+| Next / previous | `prefix` + `n` / `p` |
+| Go to window N | `prefix` + `0..9` |
+| Rename window | `prefix` + `,` |
 
-## Sessões (pela linha de comando)
+## Sessions (from the command line)
 
-| Ação | Comando |
-|------|---------|
-| Listar sessões | `tmux ls` |
-| Anexar | `tmux attach -t poc` |
-| Matar a sessão | `tmux kill-session -t poc` (ou `./dev-session.sh --kill`) |
+| Action | Command |
+|--------|---------|
+| List sessions | `tmux ls` |
+| Attach | `tmux attach -t poc` |
+| Kill the session | `tmux kill-session -t poc` (or `./dev-session.sh --kill`) |
 
-## Dica de scroll
-Terminal com muito log? `prefix` + `[` entra no modo de rolagem
-(use as setas / `PgUp`); aperte `q` para sair.
+## Scroll tip
+Pane with lots of logs? `prefix` + `[` enters scroll mode
+(use the arrows / `PgUp`); press `q` to exit.

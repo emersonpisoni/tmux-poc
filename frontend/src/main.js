@@ -5,8 +5,8 @@ const app = document.querySelector('#app');
 
 function render({ online, uptime, tasks }) {
   app.innerHTML = `
-    <h1>POC tmux 🖥️</h1>
-    <p class="sub">Frontend Vite conversando com o backend Node — tudo up por 1 comando.</p>
+    <h1>tmux POC 🖥️</h1>
+    <p class="sub">Vite frontend talking to the Node backend — all up with a single command.</p>
     <div class="status ${online ? 'ok' : 'down'}">
       <span class="dot"></span>
       ${online ? `Backend online · uptime ${formatUptime(uptime)}` : 'Backend offline'}

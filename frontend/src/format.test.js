@@ -2,15 +2,15 @@ import { describe, it, expect } from 'vitest';
 import { formatUptime } from './format.js';
 
 describe('formatUptime', () => {
-  it('mostra segundos quando abaixo de 1 minuto', () => {
+  it('shows seconds when under 1 minute', () => {
     expect(formatUptime(45)).toBe('45s');
   });
 
-  it('mostra minutos e segundos acima de 1 minuto', () => {
+  it('shows minutes and seconds above 1 minute', () => {
     expect(formatUptime(90)).toBe('1m 30s');
   });
 
-  it('lida com o zero', () => {
+  it('handles zero', () => {
     expect(formatUptime(0)).toBe('0s');
   });
 });
